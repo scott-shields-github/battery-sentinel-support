@@ -15,7 +15,7 @@
             font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
             line-height: 1.6;
             color: #1d1d1f;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #f5f5f7;
             min-height: 100vh;
         }
 
@@ -26,9 +26,12 @@
         }
 
         .hero {
-            text-align: center;
-            padding: 60px 0;
+            background: linear-gradient(135deg, #1d1d1f 0%, #2d2d2f 100%);
             color: white;
+            text-align: center;
+            padding: 80px 40px;
+            border-radius: 20px;
+            margin-bottom: 40px;
         }
 
         .hero h1 {
@@ -40,18 +43,29 @@
 
         .hero p {
             font-size: 1.2rem;
-            opacity: 0.9;
+            opacity: 0.8;
             max-width: 600px;
             margin: 0 auto;
+        }
+
+        .logo-placeholder {
+            width: 80px;
+            height: 80px;
+            background: #00d4aa;
+            border-radius: 16px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
         }
 
         .main-content {
             background: white;
             border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
             overflow: hidden;
-            margin-top: -40px;
-            position: relative;
         }
 
         .content-inner {
@@ -69,13 +83,13 @@
             color: #1d1d1f;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
         }
 
         .icon {
             width: 32px;
             height: 32px;
-            background: linear-gradient(135deg, #007AFF, #5856D6);
+            background: #00d4aa;
             border-radius: 8px;
             display: flex;
             align-items: center;
@@ -85,9 +99,9 @@
         }
 
         .contact-card {
-            background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+            background: #1d1d1f;
             color: white;
-            padding: 30px;
+            padding: 40px;
             border-radius: 16px;
             margin: 30px 0;
             text-align: center;
@@ -95,49 +109,60 @@
 
         .contact-card h3 {
             font-size: 1.5rem;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .contact-card p {
+            opacity: 0.8;
+            margin-bottom: 20px;
         }
 
         .contact-card a {
-            color: white;
+            color: #1d1d1f;
             text-decoration: none;
             font-weight: 600;
-            padding: 12px 24px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 25px;
+            padding: 14px 28px;
+            background: #00d4aa;
+            border-radius: 8px;
             display: inline-block;
-            margin-top: 15px;
-            backdrop-filter: blur(10px);
             transition: all 0.3s ease;
         }
 
         .contact-card a:hover {
-            background: rgba(255, 255, 255, 0.3);
+            background: #00b894;
             transform: translateY(-2px);
         }
 
         .requirements {
-            background: linear-gradient(135deg, #4FACFE, #00F2FE);
-            color: white;
-            padding: 25px;
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            padding: 30px;
             border-radius: 16px;
             margin: 20px 0;
         }
 
+        .requirements h3 {
+            color: #1d1d1f;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+
         .requirements ul {
             list-style: none;
-            margin-top: 15px;
         }
 
         .requirements li {
             padding: 8px 0;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
+            color: #495057;
         }
 
         .requirements li::before {
             content: "✓";
+            color: #00d4aa;
             font-weight: bold;
             font-size: 1.2rem;
         }
@@ -151,21 +176,21 @@
 
         .faq-item {
             background: #f8f9fa;
+            border: 2px solid #e9ecef;
             border-radius: 16px;
-            padding: 25px;
+            padding: 30px;
             transition: all 0.3s ease;
             cursor: pointer;
-            border: 2px solid transparent;
         }
 
         .faq-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-            border-color: #007AFF;
+            border-color: #00d4aa;
+            box-shadow: 0 8px 24px rgba(0, 212, 170, 0.15);
+            transform: translateY(-2px);
         }
 
         .faq-item h3 {
-            color: #007AFF;
+            color: #1d1d1f;
             font-size: 1.1rem;
             margin-bottom: 15px;
             font-weight: 600;
@@ -174,41 +199,62 @@
         .faq-item ol, .faq-item ul {
             margin-left: 20px;
             margin-top: 10px;
+            color: #495057;
         }
 
         .faq-item li {
-            margin: 5px 0;
+            margin: 8px 0;
         }
 
         .troubleshooting {
-            background: linear-gradient(135deg, #FEB692, #EA5455);
+            background: #1d1d1f;
             color: white;
             padding: 30px;
             border-radius: 16px;
-            margin: 30px 0;
+            margin: 20px 0;
         }
 
         .troubleshooting h3 {
             margin-bottom: 15px;
             font-size: 1.3rem;
+            color: #00d4aa;
+        }
+
+        .troubleshooting p, .troubleshooting li {
+            opacity: 0.9;
+        }
+
+        .troubleshooting ul, .troubleshooting ol {
+            margin-left: 20px;
+            margin-top: 10px;
         }
 
         .app-info {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #1d1d1f 0%, #2d2d2f 100%);
             color: white;
-            padding: 30px;
+            padding: 40px;
             border-radius: 16px;
             text-align: center;
             margin: 30px 0;
         }
 
+        .app-info h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .app-info p {
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
         .footer {
             text-align: center;
-            padding: 40px 0;
+            padding: 50px 0;
             color: white;
-            background: linear-gradient(135deg, #2C3E50, #3498DB);
+            background: #1d1d1f;
             margin-top: 50px;
-            border-radius: 20px 20px 0 0;
+            border-radius: 20px;
         }
 
         .footer h3 {
@@ -217,14 +263,18 @@
         }
 
         .footer .contact-info {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
             border-radius: 12px;
             display: inline-block;
-            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         @media (max-width: 768px) {
+            .hero {
+                padding: 60px 30px;
+            }
+            
             .hero h1 {
                 font-size: 2.5rem;
             }
@@ -244,8 +294,8 @@
 
         .badge {
             display: inline-block;
-            background: #007AFF;
-            color: white;
+            background: #00d4aa;
+            color: #1d1d1f;
             padding: 6px 12px;
             border-radius: 20px;
             font-size: 0.8rem;
@@ -254,176 +304,196 @@
         }
 
         .highlight {
-            background: linear-gradient(135deg, #FFE259, #FFA726);
-            color: #333;
+            background: #e8f5e8;
+            border: 2px solid #00d4aa;
             padding: 20px;
             border-radius: 12px;
             margin: 15px 0;
-            border-left: 4px solid #FF9800;
+        }
+
+        .highlight p {
+            color: #1d1d1f;
+            margin: 0;
         }
 
         .code {
             background: #f1f3f4;
-            padding: 2px 8px;
-            border-radius: 4px;
+            padding: 4px 8px;
+            border-radius: 6px;
             font-family: 'SF Mono', Consolas, monospace;
             font-size: 0.9rem;
-            color: #d73a49;
+            color: #1d1d1f;
+            border: 1px solid #e9ecef;
+        }
+
+        .accent-green {
+            color: #00d4aa;
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #e9ecef, transparent);
+            margin: 50px 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="hero">
+            <div class="logo-placeholder">🔋</div>
             <h1>Battery Sentinel</h1>
-            <p>Get help with intelligent battery monitoring for your Mac. Smart alerts that keep your productivity flowing.</p>
+            <p>Professional battery monitoring support. Get help with intelligent alerts that keep your Mac running when you need it most.</p>
         </div>
 
         <div class="main-content">
             <div class="content-inner">
                 
                 <div class="contact-card">
-                    <h3>📧 Need Help? We're Here!</h3>
-                    <p>Get fast, friendly support for any questions about Battery Sentinel</p>
-                    <a href="mailto:support@yourdomain.com">Contact Support</a>
-                    <p style="margin-top: 15px; opacity: 0.9;"><small>Usually respond within 24 hours</small></p>
+                    <h3>Get Expert Support</h3>
+                    <p>Professional help for Battery Sentinel users</p>
+                    <a href="mailto:support@yourdomain.com">Contact Support Team</a>
+                    <p style="margin-top: 20px; opacity: 0.7;"><small>Response within 24 hours</small></p>
                 </div>
 
                 <div class="section">
                     <h2><span class="icon">⚙️</span>System Requirements</h2>
                     <div class="requirements">
-                        <h3>🖥️ Compatible Systems</h3>
+                        <h3>Compatible Systems</h3>
                         <ul>
                             <li>macOS 14.0 or later (Sonoma and newer)</li>
                             <li>Mac with internal battery (MacBook Air, MacBook Pro)</li>
                             <li>50 MB available storage space</li>
-                            <li>Menu bar access for optimal experience</li>
+                            <li>Menu bar access for optimal functionality</li>
                         </ul>
                     </div>
                 </div>
+
+                <div class="section-divider"></div>
 
                 <div class="section">
                     <h2><span class="icon">❓</span>Frequently Asked Questions</h2>
                     
                     <div class="faq-grid">
                         <div class="faq-item">
-                            <h3>🔍 Battery Sentinel doesn't appear in menu bar</h3>
-                            <p><strong>Quick fixes:</strong></p>
+                            <h3>Battery Sentinel not visible in menu bar</h3>
+                            <p><strong>Troubleshooting steps:</strong></p>
                             <ol>
-                                <li>Check if Battery Sentinel is running in Activity Monitor</li>
-                                <li>Try quitting and restarting the app completely</li>
-                                <li>Look for a hidden menu bar icon (try expanding menu bar)</li>
-                                <li>Restart your Mac if the issue continues</li>
+                                <li>Verify Battery Sentinel is running in Activity Monitor</li>
+                                <li>Quit and restart the application completely</li>
+                                <li>Check for hidden menu bar icons (expand menu bar)</li>
+                                <li>Restart your Mac if issue persists</li>
                             </ol>
                         </div>
 
                         <div class="faq-item">
-                            <h3>⚙️ How to customize warning thresholds</h3>
-                            <p><strong>Easy setup:</strong></p>
+                            <h3>Customizing warning thresholds</h3>
+                            <p><strong>Configuration process:</strong></p>
                             <ol>
-                                <li>Click the Battery Sentinel icon in your menu bar</li>
-                                <li>Select <span class="code">Preferences...</span> from the dropdown</li>
-                                <li>Adjust sliders for Low Battery and Critical Battery alerts</li>
-                                <li>Click <span class="code">Save Settings</span> to apply your changes</li>
+                                <li>Click Battery Sentinel icon in menu bar</li>
+                                <li>Select <span class="code">Preferences...</span> from dropdown</li>
+                                <li>Adjust threshold sliders for your workflow</li>
+                                <li>Click <span class="code">Save Settings</span> to confirm</li>
                             </ol>
                         </div>
 
                         <div class="faq-item">
-                            <h3>🚀 App doesn't start at login</h3>
-                            <p><strong>Enable automatic startup:</strong></p>
+                            <h3>Launch at login not working</h3>
+                            <p><strong>Setup instructions:</strong></p>
                             <ol>
-                                <li>Click Battery Sentinel in the menu bar</li>
-                                <li>Ensure <span class="code">Launch at Login</span> is checked</li>
-                                <li>If still not working, add manually in System Settings</li>
-                                <li>Go to General → Login Items → Add Battery Sentinel</li>
+                                <li>Access Battery Sentinel menu in menu bar</li>
+                                <li>Ensure <span class="code">Launch at Login</span> is enabled</li>
+                                <li>Manual setup: System Settings → General → Login Items</li>
+                                <li>Add Battery Sentinel to startup applications</li>
                             </ol>
                         </div>
 
                         <div class="faq-item">
-                            <h3>🧪 Testing your warning settings</h3>
-                            <p><strong>Preview your alerts:</strong></p>
+                            <h3>Testing warning functionality</h3>
+                            <p><strong>Preview your settings:</strong></p>
                             <ol>
-                                <li>Click the Battery Sentinel menu bar icon</li>
-                                <li>Choose <span class="code">Test Low Warning</span> or <span class="code">Test Critical Warning</span></li>
-                                <li>A preview alert appears showing your settings</li>
-                                <li>Perfect for adjusting preferences before real alerts</li>
+                                <li>Access Battery Sentinel menu bar menu</li>
+                                <li>Select <span class="code">Test Low Warning</span> or <span class="code">Test Critical Warning</span></li>
+                                <li>Review preview alert appearance and timing</li>
+                                <li>Adjust preferences based on preview results</li>
                             </ol>
                         </div>
 
                         <div class="faq-item">
-                            <h3>🔕 Disabling specific warning types</h3>
-                            <p><strong>Customize your experience:</strong></p>
+                            <h3>Disabling specific warning types</h3>
+                            <p><strong>Selective notification control:</strong></p>
                             <ul>
-                                <li>Open Preferences from the menu bar</li>
-                                <li>Toggle off "Enable low battery warnings" to disable gentle alerts</li>
-                                <li>Toggle off "Enable critical battery warnings" to disable urgent alerts</li>
-                                <li>Each type can be customized independently</li>
+                                <li>Open Preferences from menu bar menu</li>
+                                <li>Toggle off specific warning types as needed</li>
+                                <li>Low and critical warnings can be controlled independently</li>
+                                <li>Settings are saved automatically</li>
                             </ul>
                         </div>
 
                         <div class="faq-item">
-                            <h3>🔌 Why no warnings while charging?</h3>
+                            <h3>No warnings while charging</h3>
                             <div class="highlight">
-                                <p><strong>This is smart design!</strong> Battery Sentinel automatically detects when your Mac is plugged in and pauses warnings since your battery is charging. Alerts resume when you unplug.</p>
+                                <p><strong>This is intelligent design.</strong> Battery Sentinel automatically detects charging status and pauses warnings when your Mac is plugged in. Alerts resume when unplugged.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="section-divider"></div>
+
                 <div class="section">
                     <h2><span class="icon">🛠️</span>Advanced Troubleshooting</h2>
                     
                     <div class="troubleshooting">
-                        <h3>⚡ High CPU Usage</h3>
-                        <p>Battery Sentinel is designed to be ultra-lightweight. If you notice unusual CPU usage:</p>
+                        <h3>Performance Optimization</h3>
+                        <p>Battery Sentinel is engineered for minimal resource usage. If experiencing performance issues:</p>
                         <ul>
                             <li>Restart the application completely</li>
-                            <li>Check for and install any macOS updates</li>
-                            <li>Contact our support team if the issue persists</li>
+                            <li>Install any pending macOS system updates</li>
+                            <li>Contact support for persistent performance concerns</li>
                         </ul>
                     </div>
 
                     <div class="troubleshooting">
-                        <h3>⏰ Too Many Warning Notifications</h3>
-                        <p>Fine-tune your notification experience:</p>
+                        <h3>Notification Frequency Management</h3>
+                        <p>Optimize your notification experience:</p>
                         <ul>
-                            <li>Increase warning thresholds in Preferences (higher percentages)</li>
-                            <li>Battery Sentinel has built-in cooldown periods to prevent spam</li>
-                            <li>Consider disabling low battery warnings if you only want critical alerts</li>
+                            <li>Adjust warning thresholds to higher percentages in Preferences</li>
+                            <li>Built-in intelligent cooldown prevents notification spam</li>
+                            <li>Consider disabling low battery warnings for critical-only alerts</li>
                         </ul>
                     </div>
 
                     <div class="troubleshooting">
-                        <h3>🗑️ Complete Uninstallation</h3>
-                        <p>To completely remove Battery Sentinel:</p>
+                        <h3>Complete Application Removal</h3>
+                        <p>To completely uninstall Battery Sentinel:</p>
                         <ol>
-                            <li>Quit Battery Sentinel from the menu bar (right-click → Quit)</li>
-                            <li>Open Applications folder and drag Battery Sentinel to Trash</li>
+                            <li>Quit Battery Sentinel from menu bar menu</li>
+                            <li>Move application to Trash from Applications folder</li>
                             <li>Remove from Login Items: System Settings → General → Login Items</li>
-                            <li>Restart your Mac to ensure complete removal</li>
+                            <li>Restart Mac to complete removal process</li>
                         </ol>
                     </div>
                 </div>
 
                 <div class="app-info">
-                    <h2>📱 About Battery Sentinel</h2>
-                    <p>Battery Sentinel is designed with your privacy as the top priority. We don't collect, store, or transmit any personal data. All your preferences stay safely on your Mac.</p>
+                    <h2>About Battery Sentinel</h2>
+                    <p>Professional battery monitoring designed with <span class="accent-green">privacy-first principles</span>. Zero data collection, complete local operation.</p>
                     <br>
-                    <p><strong>Current Version:</strong> 1.0 <span class="badge">Latest</span></p>
-                    <p><strong>Last Updated:</strong> June 2025</p>
-                    <p><strong>Privacy:</strong> Zero data collection</p>
+                    <p><strong>Version:</strong> 1.0 <span class="badge">Current</span></p>
+                    <p><strong>Updated:</strong> June 2025</p>
+                    <p><strong>Privacy:</strong> No data collection</p>
                 </div>
 
             </div>
         </div>
 
         <div class="footer">
-            <h3>💌 Still Need Assistance?</h3>
+            <h3>Professional Support</h3>
             <div class="contact-info">
-                <p><strong>Email us:</strong> support@yourdomain.com</p>
-                <p>Please include your macOS version, Mac model, and a detailed description of the issue.</p>
+                <p><strong>Email:</strong> support@yourdomain.com</p>
+                <p>Include: macOS version, Mac model, detailed issue description</p>
                 <br>
-                <p><em>We typically respond within 24 hours during business days.</em></p>
+                <p><em>Professional support typically responds within 24 hours</em></p>
             </div>
         </div>
     </div>
